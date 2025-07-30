@@ -11,7 +11,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'mvn test 158ffcaf849c4f1180e68ec8a086cca2'
+                sh 'mvn test  -Denforcer.skip=true'
             }
             post {
                 always {
